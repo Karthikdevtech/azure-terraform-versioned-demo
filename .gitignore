@@ -2,9 +2,9 @@
 .terraform/
 .terraform.lock.hcl
 
-
 # Ignore static-web folder
 modules/static-web/
+
 # Terraform state files
 *.tfstate
 *.tfstate.*
