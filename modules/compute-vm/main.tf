@@ -1,6 +1,9 @@
 variable "resource_group_name" { type = string }
 variable "location" { type = string }
-variable "admin_password" { type = string; sensitive = true }
+variable "admin_password" {
+    type      = string
+    sensitive = true
+}
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
